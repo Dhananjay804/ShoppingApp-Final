@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CategoriesListPopUpView" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXw-m7-nWX">
+                    <rect key="frame" x="0.0" y="518" width="393" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUm-3g-MOp">
+                            <rect key="frame" x="56.666666666666657" y="65" width="280" height="170"/>
+                            <subviews>
+                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Xl-h7-9yl">
+                                    <rect key="frame" x="0.0" y="0.0" width="280" height="120"/>
+                                </pickerView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aH-oB-Zgg">
+                                    <rect key="frame" x="175" y="125" width="90" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnq-FS-5lU">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="35"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Select"/>
+                                            <connections>
+                                                <action selector="selectBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="4zv-oN-26S"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.52156862745098043" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="jnq-FS-5lU" secondAttribute="bottom" id="SeO-ip-W0m"/>
+                                        <constraint firstAttribute="width" constant="90" id="nOX-ZJ-5Hb"/>
+                                        <constraint firstItem="jnq-FS-5lU" firstAttribute="top" secondItem="4aH-oB-Zgg" secondAttribute="top" id="qQQ-Yb-0ud"/>
+                                        <constraint firstAttribute="trailing" secondItem="jnq-FS-5lU" secondAttribute="trailing" id="yD6-TX-FCN"/>
+                                        <constraint firstItem="jnq-FS-5lU" firstAttribute="leading" secondItem="4aH-oB-Zgg" secondAttribute="leading" id="yqQ-Qf-7fd"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X03-Eq-XWC">
+                                    <rect key="frame" x="8.0000000000000071" y="125" width="90" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="ZGe-7Z-c6u"/>
+                                        <constraint firstAttribute="width" constant="90" id="t4l-OB-dge"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                    <connections>
+                                        <action selector="cancelBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="rii-b9-lNs"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="5Xl-h7-9yl" firstAttribute="top" secondItem="xUm-3g-MOp" secondAttribute="top" id="1xW-rs-Qy6"/>
+                                <constraint firstAttribute="trailing" secondItem="4aH-oB-Zgg" secondAttribute="trailing" constant="15" id="52i-7p-r4q"/>
+                                <constraint firstAttribute="trailing" secondItem="5Xl-h7-9yl" secondAttribute="trailing" id="A2e-yn-ONK"/>
+                                <constraint firstItem="4aH-oB-Zgg" firstAttribute="top" secondItem="5Xl-h7-9yl" secondAttribute="bottom" constant="5" id="SPO-aV-MPA"/>
+                                <constraint firstItem="X03-Eq-XWC" firstAttribute="leading" secondItem="xUm-3g-MOp" secondAttribute="leading" constant="8" id="YIP-Wq-0MC"/>
+                                <constraint firstAttribute="bottom" secondItem="4aH-oB-Zgg" secondAttribute="bottom" constant="10" id="dZA-gZ-v1q"/>
+                                <constraint firstAttribute="width" constant="280" id="q7L-3g-H2k"/>
+                                <constraint firstAttribute="bottom" secondItem="X03-Eq-XWC" secondAttribute="bottom" constant="10" id="rzR-GJ-rCg"/>
+                                <constraint firstAttribute="height" constant="170" id="uw4-rW-6n5"/>
+                                <constraint firstItem="X03-Eq-XWC" firstAttribute="top" secondItem="5Xl-h7-9yl" secondAttribute="bottom" constant="5" id="vnd-kW-kkp"/>
+                                <constraint firstItem="5Xl-h7-9yl" firstAttribute="leading" secondItem="xUm-3g-MOp" secondAttribute="leading" id="wJ0-No-8h5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xUm-3g-MOp" firstAttribute="centerY" secondItem="TXw-m7-nWX" secondAttribute="centerY" id="10a-1r-3pe"/>
+                        <constraint firstAttribute="height" constant="300" id="OzI-SM-Llk"/>
+                        <constraint firstItem="xUm-3g-MOp" firstAttribute="centerX" secondItem="TXw-m7-nWX" secondAttribute="centerX" id="Ucu-fd-ETq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TXw-m7-nWX" secondAttribute="bottom" id="2GZ-sq-3Tr"/>
+                <constraint firstItem="TXw-m7-nWX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aCM-NY-avs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TXw-m7-nWX" secondAttribute="trailing" id="dGk-oU-6UW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <connections>
+                <outlet property="animationView" destination="TXw-m7-nWX" id="hhz-ga-Qou"/>
+                <outlet property="mainView" destination="xUm-3g-MOp" id="d9U-4Y-0QQ"/>
+                <outlet property="pickerView" destination="5Xl-h7-9yl" id="y5y-CL-V1z"/>
+                <outlet property="selectView" destination="4aH-oB-Zgg" id="S4Z-Se-sGv"/>
+            </connections>
+            <point key="canvasLocation" x="46.564885496183201" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
